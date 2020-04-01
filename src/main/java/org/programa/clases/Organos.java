@@ -1,4 +1,4 @@
-/*CRUZ SANCHEZ MIRIAM FERNANDA*/
+package org.programa.clases;/*CRUZ SANCHEZ MIRIAM FERNANDA*/
 
 public class Organos {
 
