@@ -1,21 +1,21 @@
 version: 2
 jobs:
   Dependencias:
-    working_directory: ~/Microorganismos
+    working_directory: ~/practicaA3.2
     docker:
       - image: circleci/openjdk:8-jdk-stretch
     steps:
       - checkout
       - run: mvn dependency:go-offline
   Compilar:
-    working_directory: ~/Microorganismos
+    working_directory: ~/practicaA3.2
     docker:
       - image: circleci/openjdk:8-jdk-stretch
     steps:
       - checkout
       - run: mvn compile -e -X
   Testing:
-    working_directory: ~/Microorganismos
+    working_directory: ~/practicaA3.2
     docker:
       - image: circleci/openjdk:8-jdk-stretch
     steps:
@@ -26,7 +26,7 @@ jobs:
       - checkout
       - run: mvn test -e -X
   Run-Package:
-    working_directory: ~/Microorganismos
+    working_directory: ~/practicaA3.2
     docker:
       - image: circleci/openjdk:8-jdk-stretch
     steps:
