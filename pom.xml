@@ -57,7 +57,7 @@
             </execution>
     </executions>
     <configuration>
-                <mainClass>src.main</mainClass>
+                <mainClass>src.main.java</mainClass>
     </configuration>
             </plugin>
     </plugins>
